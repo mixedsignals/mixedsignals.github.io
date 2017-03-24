@@ -1,0 +1,17 @@
+title: Mixed Signals
+email: sethkranzler@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  Mixed Signals
+baseurl: ""
+url: "http://mixedsignals.com"
+twitter_username: polyrhythmic
+github_username:  polyrhythmatic
+
+kramdown:
+  input: GFM
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - package.json
