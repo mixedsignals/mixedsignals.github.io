@@ -1,0 +1,57 @@
+.fp-info {
+  display: flex;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  -webkit-flex-direction: row-reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+  justify-content: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  width: 100%;
+  & aside {
+    width: 400px;
+    background-color: blue;
+    & p {
+      margin: 35px 50px;
+      font-family: "TeXGyreHeros-Italic", Arial, sans-serif;
+      color: white;
+      font-size: 18px;
+    }
+  }
+  & section {
+    color: white;
+    font-family: "TeXGyreHeros-Italic", Arial, sans-serif;
+    font-size: 50px;
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    justify-content: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    margin-left: 30px;
+    width: 50%;
+    & h1 {
+      font-weight: normal;
+      margin: 0;
+    }
+    & h2 {
+      font-family: "FiftyTrial-Regular", Arial, sans-serif;
+      font-weight: normal;
+      margin: 0;
+    }
+
+    & ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    & li {
+
+    }
+  }
+}

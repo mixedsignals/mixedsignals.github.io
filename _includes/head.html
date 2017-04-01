@@ -10,7 +10,6 @@
   {% include styles.scss %}
   {% endcapture %}
   <style>
-  {{ styles | scssify }}
-  </style>
+  {{ styles | scssify }}  </style>
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 </head>

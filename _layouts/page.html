@@ -4,34 +4,25 @@
 {% include head.html %}
 
 <body>
-  <header></header>
-  <nav>
-    <h1>Mixed Signals</h1>
-    <ul>
-      <li>Info</li>
-      <li>Archive</li>
-    </ul>
-  </nav>
-  <article>
-    <aside>
-      <section>
-        <p>{{ page.description }}</p>
-      </section>
-    </aside>
-    <header>
+{% include header.html %}
+  <article class="fp-info">
+    <section>
       <h1>{{ page.title }}</h1>
       <h2>{{ page.subtitle }}</h2>
       <ul>
-        <li>{{ page.datetime }}</li>
+        <li><time datetime={{ page.datetime }}>{{ page.datetime }}</time></li>
         {% if page.location.url %}
         <li><a href="{{ page.location.url }}">{{ page.location.name }}</a></li>
         {% else if page.location.url == "" %}
         <li>{{ page.location.name }}</li>
         {% endif %}
-    </header>
+    </section>
+    <aside>
+      <p>{{ page.description }}</p>
+    </aside>
   </article>
   {% include marquee.html %}
-  <article>
+  <article class="fp-performances">
     <header>
       <h1>Performances</h1>
     </header>
