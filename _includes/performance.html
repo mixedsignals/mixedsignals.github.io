@@ -1,0 +1,29 @@
+<section>
+  <h1>{{ performance.name }}</h1>
+  {% if performance.performers %}
+  <h2>Performers: </h2>
+  <ul>
+  {% for performer in performance.performers %}
+    {% if performer.url %}
+    <li><a href="{{ performer.url }}">{{ performer.name }}</a></li>
+    {% else if performer.url == "" %}
+    <li>{{ performer.name }}</li>
+    {% endif %}
+  {% endfor %}
+  </ul>
+  {% endif %}
+  {% if performance.media || performance.image %}
+  <div>
+    {% if performance.media %}
+    {{ performance.media }}
+    {% endif %}
+    {% if performance.image %}
+    <img src="{{ performance.image | prepend: page.assets }}">
+    {% endif %}
+  </div>
+  {% if performance.description %}
+  <h3>Description:</h3>
+  <p>{{ performance.description }}</p>
+  {% endif %}
+  {% endif %}
+</section>

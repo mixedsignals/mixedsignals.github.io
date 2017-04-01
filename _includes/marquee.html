@@ -1,0 +1,10 @@
+<article>
+  <header>
+    <h1>Links</h1>
+  </header>
+  <ul>
+  {% for link in page.links %}
+    <li><a href="{{ link.url }}">{{ link.name }}</a></li>
+  {% endfor %}
+  </ul>
+</article>
