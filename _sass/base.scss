@@ -1,5 +1,15 @@
+$blue: #0000FF;
+$texGyreItalic: "TeXGyreHeros-Italic", Arial, sans-serif;
+$fiftyRegular: "FiftyTrial-Regular", Arial, sans-serif;
+$descriptionFontSize: 18px;
+
 body {
   width: 100%;
   margin: 0 auto;
   background-color: grey;
+}
+
+.hidden {
+  position: absolute;
+  left: -1000px;
 }

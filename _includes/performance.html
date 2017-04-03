@@ -1,4 +1,4 @@
-<section>
+<section class="fp-performance">
   <h1>{{ performance.name }}</h1>
   {% if performance.performers %}
   <h2>Performers: </h2>
@@ -13,12 +13,13 @@
   </ul>
   {% endif %}
   {% if performance.media || performance.image %}
-  <div>
+  <div class="fp-performance-media">
     {% if performance.media %}
     {{ performance.media }}
     {% endif %}
     {% if performance.image %}
-    <img src="{{ performance.image | prepend: page.assets }}">
+    <div class="fp-performance-image" style="background-image: url('{{ performance.image | prepend: page.assets }}')"></div>
+    <!-- <img src="{{ performance.image | prepend: page.assets }}"> -->
     {% endif %}
   </div>
   {% if performance.description %}

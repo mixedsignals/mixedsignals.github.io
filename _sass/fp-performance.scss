@@ -1,0 +1,88 @@
+.fp-performances {
+
+}
+
+.fp-performance {
+  margin: 20px 50px 20px 50%;
+  height: auto;
+  background: $blue;
+  padding: 50px 50px 70px 35px;
+
+  h2, h3, p, li {
+    font-family: $texGyreItalic;
+    font-weight: normal;
+    font-size: $descriptionFontSize;
+  }
+  
+  &h1 {
+    font-family: $fiftyRegular;
+    font-size: 30px;
+    margin: 0 0 20px 0;
+  }
+
+  &h3 {
+    // display: inline-block;
+    margin: 0;
+  }
+
+  &p {
+    display: inline-block;
+    margin: 0;
+  }
+
+  &ul {
+    list-style: none;
+    padding: 0;
+    display: inline-block;
+  }
+  &h2 {
+    display: inline-block;
+  }
+  &li {
+    display: inline;
+  }
+  &li + li:before {
+    content: ", ";
+  }
+}
+
+
+//this stuff doesn't really work
+//need to figure out a better way to locate the media
+//and also a way to center the image in the div without cropping it
+.fp-performance-media {
+  position: absolute;
+  left: 10%;
+  overflow: hidden;
+  width: 400px;
+  height: 400px;
+
+  // img, iframe {
+  //   position: absolute;
+  //   left: 0;
+  //   right: 0;
+  //   top: 0;
+  //   bottom:0;
+  // }
+
+  // img {
+  //   height: 100%;
+  //   width: auto;
+  //   min-width: 100%;
+  //   min-height: 100%;
+  //   transform: translate(-50%, -50%);
+  //   top: 50%;
+  //   left: 50%;
+  // }
+}
+
+.fp-performance-image {
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  left:0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}

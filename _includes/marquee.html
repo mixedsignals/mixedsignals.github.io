@@ -1,10 +1,18 @@
-<article>
-  <header>
+<article class="marquee">
+  <header class="hidden">
     <h1>Links</h1>
   </header>
-  <ul>
+  <ul class="hidden">
   {% for link in page.links %}
     <li><a href="{{ link.url }}">{{ link.name }}</a></li>
   {% endfor %}
   </ul>
+  <div class="marquee-container">
+  {% for i in (1..2) %}
+  <span class="marquee-span">
+  {% for i in (1...20) %}{% for link in page.links %}<a class="marquee-link" href="{{ link.url }}">{{ link.name }}</a>
+  {% endfor %}{% endfor %}
+  </span>
+  {% endfor %}
+  </div>
 </article>
