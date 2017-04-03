@@ -19,12 +19,13 @@
     {% endif %}
     {% if performance.image %}
     <div class="fp-performance-image" style="background-image: url('{{ performance.image | prepend: page.assets }}')"></div>
-    <!-- <img src="{{ performance.image | prepend: page.assets }}"> -->
     {% endif %}
   </div>
   {% if performance.description %}
-  <h3>Description:</h3>
-  <p>{{ performance.description }}</p>
+  <div>
+    <h3>Description:</h3>
+    <p>{{ performance.description }}</p>
+  </div>
   {% endif %}
   {% endif %}
 </section>

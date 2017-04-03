@@ -2,11 +2,22 @@ $blue: #0000FF;
 $texGyreItalic: "TeXGyreHeros-Italic", Arial, sans-serif;
 $fiftyRegular: "FiftyTrial-Regular", Arial, sans-serif;
 $descriptionFontSize: 18px;
+$largeFont: 50px;
 
 body {
   width: 100%;
   margin: 0 auto;
   background-color: grey;
+  color: white;
+  font-family: $texGyreItalic;
+}
+
+h1, h2, h3, h4, h5 {
+  font-weight: normal;
+}
+
+a:link, a:visited {
+  color: white;
 }
 
 .hidden {

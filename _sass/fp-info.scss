@@ -9,20 +9,19 @@
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   width: 100%;
+  margin: 100px 0;
   & aside {
     width: 400px;
     background-color: $blue;
     & p {
       margin: 35px 50px;
-      font-family: $texGyreItalic;
       color: white;
       font-size: $descriptionFontSize;
     }
   }
   & section {
     color: white;
-    font-family: $texGyreItalic;
-    font-size: 50px;
+    font-size: $largeFont;
     display: flex;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -35,12 +34,10 @@
     margin-left: 30px;
     width: 50%;
     & h1 {
-      font-weight: normal;
       margin: 0;
     }
     & h2 {
       font-family: $fiftyRegular;
-      font-weight: normal;
       margin: 0;
     }
 
