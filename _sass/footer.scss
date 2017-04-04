@@ -1,0 +1,29 @@
+footer {
+  clear: right;
+  & ul {
+    padding: 0;
+    // margin: 0;
+    list-style: none;
+    float: right;
+    clear: right;
+    margin: 40px 2px 100px 0;
+  }
+
+  & ul:after {
+    clear: right;
+  }
+
+  & li {
+    font-size: $largeFont;
+  }
+
+  & li:first-child {
+    margin-left: -10px;
+  }
+
+  & a {
+    padding: 4px;
+    background-color: black;
+    display: inline;
+  }
+}
