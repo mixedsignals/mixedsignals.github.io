@@ -69,6 +69,11 @@
   overflow: hidden;
   width: 32vw;
   height: 16vw;
+
+  & iframe {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .fp-performance-image {
