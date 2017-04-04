@@ -17,7 +17,10 @@ sass:
   style: compressed
 
 exclude:
-  - Gemfile
-  - Gemfile.lock
-  - node_modules
-  - package.json
+  - "Gemfile"
+  - "Gemfile.lock"
+  - "node_modules"
+  - "package.json"
+  - "webpack.config.js"
+  - "clearCache.js" 
+  - "cloudflareKey.js"

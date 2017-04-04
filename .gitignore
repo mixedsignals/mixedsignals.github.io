@@ -1,6 +1,7 @@
 _site
 .sass-cache
 .jekyll-metadata
+cloudflareKey.js
 
 # Created by https://www.gitignore.io/api/ruby,node,osx
 
