@@ -1,12 +1,16 @@
-$header-font: 35px;
+$header-font: 25px;
 
 .header {
   font-family: $fiftyRegular;
   font-style: normal;
   color: black;
   & nav {
+    //creating that wacky nav bar
+    // position: fixed;
+    // top: 0;
+    //  
     width: 100%;
-    height: 120px;
+    height: 80px;
     background-color: white;
     display: -webkit-flex;
       display: -ms-flexbox;

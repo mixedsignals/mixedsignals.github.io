@@ -13,42 +13,52 @@
   & aside {
     width: 400px;
     background-color: $blue;
+    margin-top: 75px;
     & p {
       margin: 35px 50px;
       color: white;
       font-size: $descriptionFontSize;
+      text-align: right;
     }
   }
   & section {
     color: white;
-    font-size: $largeFont;
-    display: flex;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    flex-direction: column;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    justify-content: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
+    // display: flex;
+    // display: -webkit-flex;
+    // display: -ms-flexbox;
+    // flex-direction: column;
+    // -webkit-flex-direction: column;
+    // -ms-flex-direction: column;
+    // justify-content: center;
+    // -webkit-justify-content: center;
+    // -ms-flex-pack: center;
     margin-left: 30px;
     width: 50%;
-    & h1 {
-      margin: 0;
+
+    & h1, h2, li {
+      background-color: black;
+      margin: 4px 0;
+      padding: 4px;
+      display: inline-block;
+      font-size: $largeFont;
     }
+
+    & h1 {
+    }
+
     & h2 {
       font-family: $fiftyRegular;
-      margin: 0;
+      margin-left: 12px;
     }
 
     & ul {
       list-style: none;
-      margin: 0;
       padding: 0;
+      margin: 0;
     }
 
     & li {
-
+      margin-left: 6px;
     }
   }
 }
