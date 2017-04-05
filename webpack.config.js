@@ -11,7 +11,7 @@ var ImageminPlugin = require("imagemin-webpack-plugin").default;
 
 
 module.exports = {
-  entry: ["./_js/entry.js"],
+  entry: ["./_js/entry.js", "./_js/analytics.js"],
   output: {
     path: "./assets/",
     filename: "/js/bundle.js"
