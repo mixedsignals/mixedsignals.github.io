@@ -10,6 +10,16 @@
     background-color: black;
     display: inline-block;
     font-size: $largeFont;
+    
+    @media (max-width: 767px) {
+      margin: auto;
+      padding: 10px 0;
+      width: 100%;
+    }
+  }
+  @media (max-width: 767px) {
+    text-align: center;
+    margin: 50px 0 20px 0;
   }
 }
 
@@ -20,7 +30,13 @@
   background: $blue;
   padding: 50px 50px 70px 35px;
 
-  & h2, h3, p, li {
+  @media (max-width: 767px) {
+    margin: 20px 0;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  & h2, p, li {
     font-size: $descriptionFontSize;
   }
   
@@ -28,26 +44,24 @@
     font-family: $fiftyRegular;
     font-size: 30px;
     margin: 0 0 20px 0;
+    @media (max-width: 767px) {
+      margin: 0 0 10px 0;
+    }
   }
 
   & h3 {
-    margin: 0;
-    float: left;
-  }
-
-  & h3:after {
-    content: "\00a0";
+    display: none;
   }
 
   & p {
-    display: inline;
+    display: block;
     margin: 0;
   }
 
   & ul {
     list-style: none;
     padding: 0;
-    display: inline-block;
+    display: inline;
   }
   & h2 {
     display: inline-block;
@@ -68,7 +82,15 @@
   top: 0;
   overflow: hidden;
   width: 32vw;
-  height: 16vw;
+  height: 18vw;
+
+  @media (max-width: 767px) {
+    position: static;
+    transform: translate(0);
+    width: 100vw;
+    height: 56.25vw;
+    margin: 20px 0 20px -35px;
+  }
 
   & iframe {
     width: 100%;
@@ -85,4 +107,18 @@
   top: 0;
   height: 100%;
   width: 100%;
+}
+
+.fp-performance-media-play {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  width: 40%;
+  height: auto;
+}
+
+.fp-performance-media-play:hover {
+  width: 45%;
+  cursor: pointer;
 }

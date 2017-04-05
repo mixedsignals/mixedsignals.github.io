@@ -17,19 +17,33 @@ $header-font: 25px;
         display: flex;
     -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
-        justify-content: space-between
+        justify-content: space-between;
+
+    @media (max-width: 767px) {
+      height: 60px;
+    }
   }
   & h1 {
     margin: auto 70px;
     font-size: $header-font;
+    @media (max-width: 767px) {
+      font-size: $largeFontMobile;
+      margin: auto 0 auto 20px;
+    }
   }
   & li {
     display:inline;
     font-size: $header-font;
-    // padding:0;
+    @media (max-width: 767px) {
+      font-size: $largeFontMobile;
+    }
   }
   & ul {
+    padding: 0;
     margin: auto 40px auto 0;
+    @media (max-width: 767px) {
+      margin: auto 20px auto 0;
+    }
   }
   & a:link, a:visited {
     color: black;

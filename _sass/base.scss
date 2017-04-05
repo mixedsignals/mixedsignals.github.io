@@ -3,6 +3,7 @@ $texGyreItalic: "TeXGyreHeros-Italic", Arial, sans-serif;
 $fiftyRegular: "FiftyTrial-Regular", Arial, sans-serif;
 $descriptionFontSize: 14px;
 $largeFont: 40px;
+$largeFontMobile: 20px;
 
 body {
   width: 100%;
@@ -10,6 +11,7 @@ body {
   // background-color: grey;
   color: white;
   font-family: $texGyreItalic;
+  overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5 {

@@ -15,6 +15,11 @@
 
   -webkit-animation: marquee 5s linear infinite;
     animation: marquee 5s linear infinite;
+
+  @media (max-width: 767px) {
+    -webkit-animation: marquee 2s linear infinite;
+      animation: marquee 2s linear infinite;
+  }
   
   -webkit-transform: translateZ(0);
     -moz-transform: translateZ(0);

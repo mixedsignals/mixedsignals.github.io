@@ -7,6 +7,12 @@ footer {
     float: right;
     clear: right;
     margin: 40px 2px 100px 0;
+
+    @media (max-width: 767px) {
+      float: none;
+      clear: none;
+      text-align: center;
+    }
   }
 
   & ul:after {
@@ -15,15 +21,25 @@ footer {
 
   & li {
     font-size: $largeFont;
+    @media (max-width: 767px) {
+      width: 100%;
+      margin: 40px 0;
+    }
   }
 
   & li:first-child {
     margin-left: -10px;
+    @media (max-width: 767px) {
+      margin: 0;
+    }
   }
 
   & a {
     padding: 4px;
     background-color: black;
     display: inline;
+    @media (max-width: 767px){
+      display: block;
+    }
   }
 }
