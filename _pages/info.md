@@ -1,0 +1,4 @@
+---
+layout: info
+permalink: /info
+---

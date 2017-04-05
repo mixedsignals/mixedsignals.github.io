@@ -2,7 +2,7 @@ title: Mixed Signals
 email: sethkranzler@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   Mixed Signals
-baseurl: ""
+baseurl: "/"
 url: "http://mixedsignals.com"
 twitter_username: polyrhythmic
 github_username:  polyrhythmatic
