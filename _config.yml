@@ -16,6 +16,9 @@ include:
 sass:
   style: compressed
 
+gems:
+  - jekyll-sitemap
+
 exclude:
   - "Gemfile"
   - "Gemfile.lock"
