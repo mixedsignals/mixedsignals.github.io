@@ -9,6 +9,7 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
+    "cloudflare": "^1.1.1",
     "copy-webpack-plugin": "^4.0.1",
     "imagemin-webpack-plugin": "^1.4.4"
   }

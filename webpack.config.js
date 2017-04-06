@@ -1,4 +1,4 @@
-// require("./clearCache.js");
+require("./clearCache.js");
 
 var CopyWebpackPlugin = require("copy-webpack-plugin");
 var ImageminPlugin = require("imagemin-webpack-plugin").default;

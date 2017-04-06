@@ -6,7 +6,7 @@ var client = new CFClient({
     key: key
 });
 
-client.deleteCache("90ab534605cbadeb10f35b2327080e4d", {"purge_everything":true}).then(data => {
+client.deleteCache("042e4d16d6c71934c034000c86d62c60", {"purge_everything":true}).then(data => {
   if(data !== true){
     console.error("📛 cloudflare cache not cleared 📛");
   } else {
