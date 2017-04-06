@@ -1,14 +1,14 @@
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-
-  {% capture styles %}
-  {% include styles.scss %}
-  {% endcapture %}
-  <style>
-  {{ styles | scssify }}  </style>
+  <meta charset="utf-8" />
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="{% if page.description %}{{ page.description }}{{ site.description }}{% else %}{{ site.description }}{% endif %}" />
+  <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Mixed Signals {{ page.title }} | {{ page.subtitle }}" />
+  <meta property="og:description" content="{% if page.description %}{{ page.description }}{{ site.description }}{% else %}{{ site.description }}{% endif %}" />
+  <meta property="og:image" content="{{ site.logo | prepend: site.url }}" />
+  <title>{% if page.title %}Mixed Signals {{ page.title }} | {{ page.subtitle }}{% else %}{{ site.title }}{% endif %}</title>{% capture styles %}{% include styles.scss %}{% endcapture %}
+  <style>{{ styles | scssify }}</style>
 </head>

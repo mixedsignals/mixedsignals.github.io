@@ -1,11 +1,12 @@
 title: Mixed Signals
 email: sethkranzler@gmail.com
-description: > # this means to ignore newlines until "baseurl:"
-  Mixed Signals
-baseurl: "/"
+description: >
+  Mixed Signals is an emerging concert series highlighting new works in electronic and digital video, music and dance.
+baseurl: ""
 url: "http://mixedsignals.com"
 twitter_username: polyrhythmic
 github_username:  polyrhythmatic
+logo: "/assets/images/logo.png"
 
 kramdown:
   input: GFM
