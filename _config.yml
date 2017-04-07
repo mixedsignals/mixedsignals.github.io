@@ -8,6 +8,24 @@ twitter_username: polyrhythmic
 github_username:  polyrhythmatic
 logo: "/assets/images/logo.png"
 
+collections:
+  events:
+    output: true
+    permalink: /
+  events_description:
+    output: true
+    permalink: /:collection/:name
+
+defaults:
+ - scope:
+     path: "_events"
+   values:
+     layout: page
+ - scope:
+     path: "_events_description"
+   values:
+     layout: description
+
 kramdown:
   input: GFM
 
