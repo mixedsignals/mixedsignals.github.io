@@ -1,0 +1,49 @@
+{% for page in site.events %}
+{% if forloop.last %}
+
+{{ page.description }}
+<br>
+Mixed Signals {{ page.title }} 
+<br>
+https://mixedsignals.nyc
+<br>
+{{ page.subtitle }}
+<br>
+{{ page.datetime }}
+<br>
+{{ page.location.name }} {{ page.location.url }}
+<br>
+{{ page.location.notes }}
+<br>
+{{ page.price }}
+<br>
+<br>
+With performances by
+<br>
+<br>
+{% for performance in page.performances %}
+  {% for performer in performance.performers %}
+  {{ performer.name }} <br>
+  {% endfor %}
+{% endfor %}
+{% for performance in page.performances %}
+<br>
+{{ performance.name }}
+<br>
+  {% if performance.performers %}
+Performers:
+{% assign performerlist = "" %}
+  {% for performer in performance.performers %}
+    {% capture performerlist %}{{ performerlist | append: performer.name | append: "|" }}{% endcapture %}
+  {% endfor %}
+  {{ performerlist | split: "|" | join: ", " }}
+  {% endif %}
+  <br>
+  {% if performance.description %}
+    {{ performance.description }}
+  {% endif %}
+  <br>
+{% endfor %}
+
+{% endif %}
+{% endfor %}
