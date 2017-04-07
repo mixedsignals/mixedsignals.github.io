@@ -8,12 +8,12 @@
 <section class="fourohfour-main">
   <h1>404. PAGE NOT FOUND</h1>
   <p>Unfortunately, this page does not exist. Please check your URL or return to the <a href="./">Home Page.</a></p>
-  <img id="404-gif"></body>
+  <img id="404-gif" src="{{ site.url }}"></body>
   <script type="text/javascript">
     var errorGif = document.getElementById("404-gif");
     var rand = Math.floor(Math.random() * 3) + 1;
     console.log(rand);
-    errorGif.src = "./assets/images/404-" + rand + ".gif";
+    errorGif.src += "/assets/images/404-" + rand + ".gif";
   </script>
   {% include footer.html %}
 </section>

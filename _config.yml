@@ -11,7 +11,7 @@ logo: "/assets/images/logo.png"
 collections:
   events:
     output: true
-    permalink: /
+    permalink: /archive/:name
   events_description:
     output: true
     permalink: /:collection/:name

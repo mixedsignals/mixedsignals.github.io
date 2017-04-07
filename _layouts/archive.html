@@ -3,7 +3,8 @@
 {% include head.html %}
 <body>
 {% include header.html %}
-Coming soon
-{% include footer.html %}
+{% for page in site.events %}
+<a href="{{ site.url }}/archive/{{ page.title }}">{{ page.title }}</a>
+{% endfor %}{% include footer.html %}
 </body>
 </html>
