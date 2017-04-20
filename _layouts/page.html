@@ -2,12 +2,12 @@
 <html>
 
 {% include head.html %}
-{{ page.background }}
+{{ page.background | replace: '!SITE_URL!', site.url}}
 
 <body>
 {% include header.html %}
 
-  <article class="fp-info">
+  <article class="fp-info no-render">
     <section>
       <h1>{{ page.title }}</h1>
       <h2>{{ page.subtitle }}</h2>
@@ -24,7 +24,7 @@
     </aside>
   </article>
   {% include marquee.html %}
-  <article class="fp-performances">
+  <article class="fp-performances no-render">
     <header>
       <h1>Performances</h1>
     </header>
