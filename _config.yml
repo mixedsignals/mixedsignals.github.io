@@ -12,12 +12,19 @@ collections:
   events:
     output: true
     permalink: /archive/:name
+  event_photos:
+    output: true
+    permalink: /archive/photos_:name
 
 defaults:
  - scope:
      path: "_events"
    values:
      layout: page
+ - scope:
+     path: "_event_photos"
+   values:
+     layout: event_photos
 
 kramdown:
   input: GFM
@@ -39,3 +46,5 @@ exclude:
   - "webpack.config.js"
   - "clearCache.js" 
   - "cloudflareKey.js"
+  - "screenshot.js"
+  - "todo.md"

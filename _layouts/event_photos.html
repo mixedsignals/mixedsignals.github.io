@@ -1,0 +1,9 @@
+{% capture dir %}archive/{{ page.title }}{% endcapture %}
+
+{% for file in site.static_files %}
+  {% if file.path contains dir %}
+    {% if file.path contains '.jpg' or file.path contains '.png' %}
+      <img src="{{ file.path }}"/>
+    {% endif %}
+  {% endif %}
+{% endfor %}
