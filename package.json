@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "thumbnails": "./node_modules/.bin/slimerjs screenshot.js"
   },
   "author": "Seth Kranzler",
   "license": "ISC",
@@ -11,6 +11,7 @@
   "devDependencies": {
     "cloudflare": "^1.1.1",
     "copy-webpack-plugin": "^4.0.1",
-    "imagemin-webpack-plugin": "^1.4.4"
+    "imagemin-webpack-plugin": "^1.4.4",
+    "slimerjs": "^0.10.3"
   }
 }
