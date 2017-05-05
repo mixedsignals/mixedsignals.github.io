@@ -13,7 +13,7 @@ mediaElements.forEach(function(element){
   if(element.children.length > 1){
     element.insertAdjacentHTML('beforeend', '\
         <svg class="fp-performance-media-play" viewBox="0 0 200 200" alt="Play video">\
-            <polygon points="70, 55 70, 145 145, 100" fill="#fff"/>\
+            <polygon points="70, 55 70, 145 145, 100" fill="#fff" fill-opacity="0.7"/>\
         </svg>\
     ');
     if(element.children[0].tagName.toLowerCase() === "iframe"){
