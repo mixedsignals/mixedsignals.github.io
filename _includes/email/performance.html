@@ -1,8 +1,8 @@
-<table align="{% if mod == 0 %}left{% else %}right{% endif %}" border="0" cellpadding="0" cellspacing="0" class="mcnCaptionBottomContent" width="282">
+<table align="{% if index == 0 %}left{% else %}right{% endif %}" border="0" cellpadding="0" cellspacing="0" class="mcnCaptionBottomContent" width="282">
   <tbody>
     <tr>
       <td class="mcnCaptionBottomImageContent" align="center" valign="top" style="padding:0 9px 9px 9px;">
-        <img alt="" src="{{ currentPerformance.image | prepend: page.assets | prepend: site.url }}" width="264" style="max-width:600px;" class="mcnImage">
+        <div class="performer-entry" style="background-image: url({{ currentPerformance.image | prepend: page.assets | prepend: site.url }})" width="264" height="200"></div>
       </td>
     </tr>
     <tr>

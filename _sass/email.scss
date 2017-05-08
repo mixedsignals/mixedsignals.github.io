@@ -708,3 +708,21 @@ h4 {
     line-height: 150% !important;
   }
 }
+
+.performer-entry{
+  background-repeat: no-repeat;
+  /*@editable*/
+  background-position: center;
+  /*@editable*/
+  background-size: cover;
+  width: 264px;
+  height: 200px;
+  max-width:600px;
+}
+
+@media only screen and (max-width: $mobileWidth) {
+  .performer-entry {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
