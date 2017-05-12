@@ -21,6 +21,7 @@ footer {
 
   & li {
     font-size: $largeFont;
+    line-height: 60px;
     @media (max-width: 767px) {
       width: 100%;
       margin: 40px 0;

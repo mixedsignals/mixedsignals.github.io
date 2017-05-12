@@ -1,12 +1,27 @@
 <!DOCTYPE html>
 <html>
+{% capture style %}{% include archive.scss %}{% endcapture %}
 {% include head.html %}
 <body>
 {% include header.html %}
-{% for page in site.events %}
-<a href="{{ site.url }}/archive/{{ page.title }}">{{ page.title }}</a>
-{% endfor %}
+{% for page in site.events reversed %}
+<section class="archive-event">
+    <a href="{{ site.url }}/archive/{{ page.title }}" class="archive-thumbnail" style="background-image: url({{ site.url }}/assets/archive/thumbnails/{{ page.title }}.jpg)">
+      <h1>{{ page.title }}</h1>
+    </a>
+  </a>
+  <div class="archive-info">
+    <p><a href="{{ site.url }}/archive/{{ page.title }}">{{ page.subtitle }}</a></p>
+    <time datetime="{{ page.datetime }}">{{ page.datetime | date: "%-d %B %Y"}}</time>
+    <h2 class="hidden">Links</h2>
+    <ul>
+      <li><a href="{{ site.url }}/archive/{{ page.title }}">Event Page</a></li>
+      <li><a href="{{ site.url }}/archive/photos_{{ page.title }}">Photos</a></li>
+    </ul>
+  </div>
+</section>
 
+{% endfor %}
 {% include footer.html %}
 </body>
 </html>

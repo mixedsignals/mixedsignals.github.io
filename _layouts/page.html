@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-
+{% capture style %}{% include styles.scss %}{% endcapture %}
 {% include head.html %}
 {{ page.background | replace: '!SITE_URL!', site.url}}
 

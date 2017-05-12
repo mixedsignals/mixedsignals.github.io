@@ -9,7 +9,7 @@
   <meta property="og:title" content="Mixed Signals {{ page.title }} | {{ page.subtitle }}" />
   <meta property="og:description" content="{% if page.description %}{{ page.description }}{{ site.description }}{% else %}{{ site.description }}{% endif %}" />
   <meta property="og:image" content="{{ site.logo | prepend: site.url }}" />
-  <title>{% if page.title %}Mixed Signals {{ page.title }} | {{ page.subtitle }}{% else %}{{ site.title }}{% endif %}</title>{% capture styles %}{% include styles.scss %}{% endcapture %}
+  <title>{% if page.title %}Mixed Signals {{ page.title }} | {{ page.subtitle }}{% else %}{{ site.title }}{% endif %}</title>
   <link rel="apple-touch-icon" sizes="57x57" href="{{ site.url }}/assets/favicon/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="{{ site.url }}/assets/favicon/apple-icon-60x60.png">
   <link rel="apple-touch-icon" sizes="72x72" href="{{ site.url }}/assets/favicon/apple-icon-72x72.png">
@@ -27,5 +27,5 @@
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-TileImage" content="{{ site.url }}/assets/favicon/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
-  <style type="text/css">{{ styles | scssify }}</style>
+  <style type="text/css">{{ style | scssify }}</style>
 </head>
