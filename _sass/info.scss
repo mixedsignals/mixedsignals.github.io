@@ -219,7 +219,7 @@ article {
   & h1 {
     font-family: $fiftyRegular;
     text-align: center;
-    margin: 50px 0;
+    margin: 50px 20px;
   }
 }
 
@@ -228,12 +228,21 @@ article {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
+  @media (max-width: 767px) {
+    flex-direction: column;
+  }
 }
 
 .email {
   border: none; //2px solid $blue;
   background-color: $blue;
   border-bottom: 2px solid white;
+  width: 250px;
+  @media (max-width: 767px) {
+    max-width: 250px;
+    width: 90%;
+    margin: 0 auto;
+  }
 }
 
 .button {
@@ -244,10 +253,20 @@ article {
   font-style: italic;
   margin-left: 20px;
 
+  @media (max-width: 767px) {
+    margin: 20px auto 0 auto;
+  }
+
   &:hover {
     color: $blue;
     background-color: white;
   }
+}
+
+#mce-success-response {
+  display: inline-block;
+  margin: 20px;
+  text-align: center;
 }
 
 input {

@@ -23,7 +23,7 @@ body {
 
   @media (max-width: 767px) {
     margin: 0 auto;
-    width: 350px;
+    width: 100%;
     height: 280px;
   }
 
@@ -46,8 +46,9 @@ body {
   position: relative;
 
   @media (max-width: 767px) {
-    margin: 30px auto;
-    width: 350px;
+    margin: 30px;
+    width: 100%;
+    font-size: $largeFontMobile;
   }
 
   & p {
