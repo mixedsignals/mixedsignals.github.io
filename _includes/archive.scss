@@ -21,8 +21,9 @@
   font-style: normal;
 }
 
-@import "../_sass/foundation.scss",
-  "../_sass/base.scss",
-  "../_sass/header.scss",
-  "../_sass/archive.scss",
-  "../_sass/footer.scss";
+@import //"../_includes/fonts",
+  "foundation.scss",
+  "base.scss",
+  "header.scss",
+  "archive.scss",
+  "footer.scss";
