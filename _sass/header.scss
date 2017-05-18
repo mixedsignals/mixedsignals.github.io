@@ -30,10 +30,17 @@ $header-font: 25px;
       font-size: $largeFontMobile;
       margin: auto 0 auto 20px;
     }
+    & span {
+      @media (max-width: 767px) {
+        display: none;
+      }
+    }
   }
+
   & li {
     display:inline;
     font-size: $header-font;
+    margin-left: 10px;
     @media (max-width: 767px) {
       font-size: $largeFontMobile;
     }
@@ -42,10 +49,24 @@ $header-font: 25px;
     padding: 0;
     margin: auto 40px auto 0;
     @media (max-width: 767px) {
-      margin: auto 20px auto 0;
+      margin: auto 15px auto 0;
+      display: inherit;
     }
   }
+
   & a:link, a:visited {
     color: black;
+    text-decoration: none;
+    margin: 2px;
+    padding: 2px;
+  }
+
+  & a:hover {
+    border: 2px solid black;
+    margin: 0;
+    @media (max-width: 767px) {
+      border: none;
+      margin: 2px;
+    }
   }
 }

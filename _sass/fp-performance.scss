@@ -1,5 +1,4 @@
 .fp-performances {
-
 }
 
 .fp-performances header {
@@ -15,6 +14,7 @@
       margin: auto;
       padding: 10px 0;
       width: 100%;
+      font-size: 35px;
     }
   }
   @media (max-width: 767px) {
@@ -29,6 +29,8 @@
   height: auto;
   background: $blue;
   padding: 50px 50px 70px 35px;
+  max-width: 600px;
+  min-height: 12vw;
 
   @media (max-width: 767px) {
     margin: 20px 0;
@@ -83,6 +85,8 @@
   overflow: hidden;
   width: 32vw;
   height: 18vw;
+  max-width: 600px;
+  max-height: 338px;
 
   @media (max-width: 767px) {
     position: static;
