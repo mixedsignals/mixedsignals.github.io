@@ -11,7 +11,15 @@
   "devDependencies": {
     "cloudflare": "^1.1.1",
     "copy-webpack-plugin": "^4.0.1",
+    "css-loader": "^0.28.2",
     "imagemin-webpack-plugin": "^1.4.4",
-    "slimerjs": "^0.10.3"
+    "slimerjs": "^0.10.3",
+    "style-loader": "^0.18.0",
+    "webpack": "^2.6.0"
+  },
+  "dependencies": {
+    "featherlight": "^1.7.5",
+    "freewall": "^1.0.8",
+    "jquery": "^2.2.4"
   }
 }
