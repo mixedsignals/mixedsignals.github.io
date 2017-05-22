@@ -4,52 +4,59 @@
   crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/freewall/1.0.5/freewall.min.js"></script>
 
-{% capture dir %}archive/{{ page.title }}{% endcapture %}
+  <link href="//cdn.rawgit.com/noelboss/featherlight/1.7.5/release/featherlight.min.css" type="text/css" rel="stylesheet" />
+  <script src="//cdn.rawgit.com/noelboss/featherlight/1.7.5/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
 
+  <style type="text/css">
+    .featherlight .featherlight-content {
+        border: 0;
+        padding: 0;
+    }
+    .featherlight .featherlight-image {
+        border: 20px solid #fff;
+        max-width: 100%;
+    }
+    @media only screen and (max-width: 1024px) {
+        .featherlight .featherlight-image {
+            border: 10px solid #fff;
+        }
+    }
+  </style>
+{% capture dir %}archive/{{ page.title }}{% endcapture %}
 <div id="freewall" class="free-wall">
 {% for file in site.static_files %}
   {% if file.path contains dir %}
     {% if file.path contains ".jpg" or file.path contains ".png" %}
       <div class="brick">
-      <img src="{{ file.path }}" width="100%"/>
+      <a href="#" data-featherlight="{{ file.path }}">
+        <img src="{{ file.path }}" width="100%"/>
+      </a>
       </div>
     {% endif %}
   {% endif %}
 {% endfor %}
 </div>
 <script type="text/javascript">
-
-      // var temp = "<div class="brick' style='width:{width}px;'><img src='i/photo/{index}.jpg' width='100%'></div>";
-      // var w = 1, h = 1, html = '', limitItem = 49;
-      // for (var i = 0; i < limitItem; ++i) {
-      //   w = 1 + 3 * Math.random() << 0;
-      //   html += temp.replace(/\{width\}/g, w*150).replace("{index}", i + 1);
-      // }
-      // $("#freewall").html(html);
-
-      var bricks = $(".brick");
-      var w = 1;
-      bricks.each(function(index){
-        w = 1 + 3 * Math.random() << 0;
-        console.log(w)
-        // w = 200 +  200 * Math.random() << 0;
-        $(bricks[index]).css({"width":w*300})
-      })
-
-      var wall = new Freewall("#freewall");
-      wall.reset({
-        selector: ".brick",
-        animate: true,
-        cellW: 300,
-        cellH: "auto",
-        onResize: function() {
-          wall.fitWidth();
-        }
-      });
-
-      var images = wall.container.find(".brick");
-      images.find("img").load(function() {
-        wall.fitWidth();
-      });
-
+  var bricks = $(".brick");
+  var w = 1;
+  bricks.each(function(index){
+    w = 1 + 3 * Math.random() << 0;
+    console.log(w)
+    // w = 200 +  200 * Math.random() << 0;
+    $(bricks[index]).css({"width":w*300})
+  });
+  var wall = new Freewall("#freewall");
+  wall.reset({
+    selector: ".brick",
+    animate: true,
+    cellW: 300,
+    cellH: "auto",
+    onResize: function() {
+      wall.fitWidth();
+    }
+  });
+  var images = wall.container.find(".brick");
+  images.find("img").load(function() {
+    wall.fitWidth();
+  });
     </script>
