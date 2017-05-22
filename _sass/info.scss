@@ -226,10 +226,16 @@ article {
 .input-wrapper {
   margin: 0 auto;
   display: flex;
+    display: -webkit-flex;
+      display: -ms-flexbox;
   justify-content: center;
+    -webkit-justify-content: center;
+      -ms-flex-pack: center;
   margin-bottom: 50px;
   @media (max-width: 767px) {
-    flex-direction: column;
+    -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+        flex-direction: column;
   }
 }
 

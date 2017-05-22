@@ -4,11 +4,17 @@ body {
 
 .archive-event {
   display: flex;
+    display: -webkit-flex;
+      display: -ms-flexbox;
   justify-content: center;
+    -webkit-justify-content: center;
+      -ms-flex-pack: center;
   margin: 100px 20px 0;
   height: auto;
   @media (max-width: 767px) {
-    flex-direction: column;
+    -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+        flex-direction: column;
     margin: 50px auto;
   }
 }
