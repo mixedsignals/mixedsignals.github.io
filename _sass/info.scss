@@ -169,8 +169,13 @@ textarea {
 
 body {
   background-color: blue;
-  font-size: 20px;
-  line-height: 25px;
+  font-size: 30px;
+  line-height: 35px;
+
+  @media (max-width: 767px) {
+    font-size: 20px;
+    line-height: 25px;
+  }
 
   & section {
     max-width: 600px;
@@ -243,9 +248,9 @@ article {
   border: none; //2px solid $blue;
   background-color: $blue;
   border-bottom: 2px solid white;
-  width: 250px;
+  width: 300px;
   @media (max-width: 767px) {
-    max-width: 250px;
+    max-width: 300px;
     width: 90%;
     margin: 0 auto;
   }
