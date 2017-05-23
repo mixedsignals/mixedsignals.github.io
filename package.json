@@ -20,6 +20,7 @@
   "dependencies": {
     "featherlight": "^1.7.5",
     "freewall": "^1.0.8",
+    "imagemin-mozjpeg": "^6.0.0",
     "jquery": "^2.2.4"
   }
 }

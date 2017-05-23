@@ -3,6 +3,8 @@ var path = require("path");
 
 var CopyWebpackPlugin = require("copy-webpack-plugin");
 var ImageminPlugin = require("imagemin-webpack-plugin").default;
+var imageminMozjpeg = require("imagemin-mozjpeg");
+
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 var extractSass = new ExtractTextPlugin({
@@ -26,7 +28,15 @@ module.exports = {
       from: path.join(__dirname, "/_assets/"),
       to: path.join(__dirname, "assets")
     }]),
-    new ImageminPlugin({ test: /\.(jpe?g|png|gif|svg)$/i })
+    new ImageminPlugin({
+      test: /\.(jpe?g|png|gif|svg)$/i,
+      plugins: [
+        imageminMozjpeg({
+          quality: 70,
+          progressive: true
+        })
+      ]
+    })
   ],
   module: {
     rules: [
