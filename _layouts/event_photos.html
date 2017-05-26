@@ -1,3 +1,9 @@
+<!DOCTYPE html>
+<html>
+{% capture style %}{% include styles.scss %}{% endcapture %}
+{% include head.html %}
+<body>
+{% include header.html %}
 {% capture dir %}archive/{{ page.title }}{% endcapture %}
 <div id="freewall" class="free-wall">
 {% for file in site.static_files %}
@@ -28,4 +34,10 @@
         border: 10px solid #fff;
     }
   }
+  body {
+    background-color: white;
+  }
 </style>
+{% include footer.html %}
+</body>
+</html>
