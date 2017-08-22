@@ -12,7 +12,7 @@
   {% endfor %}
   </ul>
   {% endif %}
-  {% if performance.media || performance.image %}
+  {% if performance.media or performance.image %}
   <div class="fp-performance-media">
     {% if performance.media %}
     {{ performance.media }}
@@ -20,10 +20,10 @@
     {% if performance.image %}
     <div class="fp-performance-image" style="background-image: url('{{ performance.image | prepend: page.assets | prepend: site.url }}')"></div>
     {% endif %}
+  {% endif %}
   </div>
   {% if performance.description %}
     <h3>Description:</h3>
     <p>{{ performance.description }}</p>
-  {% endif %}
   {% endif %}
 </section>
