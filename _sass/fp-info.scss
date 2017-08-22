@@ -19,11 +19,12 @@
     overflow-x: hidden;
   }
   & aside {
-    width: 400px;
+    max-width: 320px;
     background-color: $blue;
     margin-top: 75px;
+    line-height: 20px;
     & p {
-      margin: 35px 50px;
+      margin: 35px 40px;
       color: white;
       font-size: $descriptionFontSize;
       text-align: right;
@@ -31,6 +32,7 @@
     @media (max-width: 767px) {
       width: 100%;
       margin: 20px;
+      max-width: 100%;
     }
   }
   & section {
@@ -52,12 +54,20 @@
       width: auto;
     }
 
-    & h1, h2, li {
+    & span {
       background-color: black;
-      margin: 4px 0;
+    }
+
+    & h1, h2, li {
+      margin: 20px 0;
       padding: 4px;
       display: table;
       font-size: $largeFont;
+      // display: inline-block;
+
+      @media (max-width: 767px) {
+        font-size: $mobileMediumFont;
+      }
     }
 
     & h1 {

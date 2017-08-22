@@ -7,16 +7,16 @@
 <body>
 {% include header.html %}
 
-  <article class="fp-info">
+  <article class="fp-info no-render">
     <section>
-      <h1>{{ page.title }}</h1>
-      <h2>{{ page.subtitle }}</h2>
+      <h1><span>{{ page.title }}</span></h1>
+      <h2><span>{{ page.subtitle }}</span></h2>
       <ul>
-        <li><time datetime={{ page.datetime }}>{{ page.datetime }}</time></li>
+        <li><span><time datetime={{ page.datetime }}>{{ page.datetime }}</time></span></li>
         {% if page.location.url %}
-        <li><a href="{{ page.location.url }}">{{ page.location.name }}</a></li>
+        <li><span><a href="{{ page.location.url }}">{{ page.location.name }}</a></span></li>
         {% else if page.location.url == "" %}
-        <li>{{ page.location.name }}</li>
+        <li><span>{{ page.location.name }}</span></li>
         {% endif %}
     </section>
     <aside>
@@ -24,7 +24,7 @@
     </aside>
   </article>
   {% include marquee.html %}
-  <article class="fp-performances">
+  <article class="fp-performances no-render">
     <header>
       <h1>Performances</h1>
     </header>
