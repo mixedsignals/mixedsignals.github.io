@@ -2,7 +2,7 @@
   overflow: hidden;
   position: relative;
   height: 58px;
-  width: 2000px;
+  width: 100%;
 }
 
 .marquee-container {
@@ -40,24 +40,24 @@
 
 }
 
-.marquee div:hover {
-  -webkit-animation-play-state: paused;
-    animation-play-state: paused;
-}
+// .marquee div:hover {
+//   -webkit-animation-play-state: paused;
+//     animation-play-state: paused;
+// }
 
 .marquee-span {
-  float: left;
-  width: 50%;
-  display: -webkit-flex;
-    display: -ms-flexbox;
-      display: flex;
-  -webkit-justify-content: space-between;
-    -ms-flex-pack: justify;
-      justify-content: space-between;
-  flex-wrap: wrap;
-    -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
+  // float: left;
+  // width: 50%;
+  // display: -webkit-flex;
+  //   display: -ms-flexbox;
+  //     display: flex;
+  // -webkit-justify-content: space-between;
+  //   -ms-flex-pack: justify;
+  //     justify-content: space-between;
+  // flex-wrap: wrap;
+  //   -webkit-flex-wrap: wrap;
+  //     -ms-flex-wrap: wrap;
+  //         flex-wrap: wrap;
 }
 
 .marquee-link {
