@@ -2,7 +2,7 @@ var jscroll = require("./jscroll.js");
 
 // debugger;
 
-jscroll.jInvertScroll([".marquee-container"])
+jscroll.jInvertScroll([".marquee-container"], {height:100})
 
 function toArray(elements){
   var arr = [];

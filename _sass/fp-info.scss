@@ -56,6 +56,10 @@
 
     & span {
       background-color: black;
+
+      & time {
+
+      }
     }
 
     & h1, h2, li {
@@ -63,6 +67,7 @@
       padding: 4px;
       display: table;
       font-size: $largeFont;
+      line-height: 45px;
       // display: inline-block;
 
       @media (max-width: 767px) {
